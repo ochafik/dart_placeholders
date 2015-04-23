@@ -1,2 +1,6 @@
 name: Placeholders
-description: A pub package 
+description: A pub package
+dependencies:
+  smoke: any
+dev_dependencies:
+  unittest: any
