@@ -21,6 +21,8 @@ main() {
         expect([1, 2, 3, 4].where(_ % 2 == 0), [2, 4]);
         expect([1, 2, 3, 4].where(_ <= 2), [1, 2]);
         expect([1, 2, 3, 4].where(_.toString() == "2"), [2]);
+        
+        expect([1, 2, 3, 4].map(_ + 1), [2, 3, 4, 5]);
       });
       test('chokes on nulls', () {
         expect(() => [null].map(_.bar).toList(), throws);
