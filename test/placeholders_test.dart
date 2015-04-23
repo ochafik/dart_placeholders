@@ -5,8 +5,8 @@ class Foo { int i; }
 class Bar { Foo foo; }
 class Baz { Bar bar; }
 
-final _ = $_;
-final __ = $__;
+final _ = $;
+final __ = $$;
 
 main() {
   group('Placeholder', () {

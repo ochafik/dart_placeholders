@@ -47,5 +47,5 @@ class Placeholder extends Function {
 }
 
 _identity(v) => v;
-var $_ = new Placeholder(false, _identity);
-var $__ = new Placeholder(true, _identity);
+var $ = new Placeholder(false, _identity);
+var $$ = new Placeholder(true, _identity);
