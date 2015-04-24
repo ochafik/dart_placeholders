@@ -25,3 +25,9 @@ expect(outers.map(__.inner.foo), [
   123
 ]);
 ```
+
+# TODO
+
+* Create a pub transformer that removes the `import 'package:placeholders/placeholders.dart';` and the `$_` aliases, and expands `_.foo.bar...` into `(_) => _.foo.bar...`
+* Email dartlang.org/misc to discuss, then file a Dart Enhancement Process request to make the analyzer aware of this
+* Investigate placeholders for functions with 2, 3, more arguments (as in Scala with `_1`, `_2`... or Swift with `$1`, `$2`...)
